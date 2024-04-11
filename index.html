@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Mercado Pago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body>
     <!-- Header -->
@@ -31,7 +33,8 @@
                     <div class="total-price">$0</div>
                 </div>
                 <!-- Buy Button -->
-                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- <button type="button" class="btn-buy">Buy Now</button> -->
+                 <div class="btn-buy" id="wallet_container"></div>
                 <!-- Cart Close -->
                 <i class='bx bx-x' id="close-cart"></i>
 
@@ -103,5 +106,6 @@
     </section>
     <!-- link to js -->
     <script src="js/main.js"></script>
+    <script src="js/mp.js"></script>
 </body>
 </html>
