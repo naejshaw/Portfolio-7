@@ -56,3 +56,39 @@ preference.create({
 })
 .then(console.log)
 .catch(console.log);
+
+// const mercadopago = require('mercadopago');
+
+// // Substitua com suas credenciais de teste
+// mercadopago.configurations.setAccessToken('APP_USR-609660327311030-011713-bed53e7dcbf2535eab7fa0cdcee6949f-260157410');
+
+// const preference = {
+//     items: [
+//         {
+//             id: '123',
+//             description: 'Produto de teste',
+//             quantity: 1,
+//             unit_price: total
+//         }
+//     ],
+//     payment_methods: {
+//         excluded: ['amex'] // Excluir Amex, por exemplo
+//     }
+// };
+
+// mercadopago.preferences.create(preference)
+//     .then(function(response) {
+//         console.log('Preferência criada:', response.body.id);
+//     })
+//     .catch(function(error) {
+//         console.error('Erro ao criar preferência:', error);
+//     });
+
+//     mercadopago.preferences.checkoutPro(preference_id)
+//     .then(function(response) {
+//         console.log('URL de pagamento:', response.body.init_point);
+//         // Redirecionar o usuário para a URL de pagamento
+//     })
+//     .catch(function(error) {
+//         console.error('Erro ao obter URL de pagamento:', error);
+//     });

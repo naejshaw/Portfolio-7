@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Mercado Pago -->
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <!-- Mercado Pago
+    <script src="https://sdk.mercadopago.com/js/v2"></script> -->
 </head>
 <body>
     <!-- Header -->
@@ -30,11 +30,12 @@
                 <!-- Total -->
                 <div class="total">
                     <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
+                    <div class="total-price" id="valor">$0</div>
                 </div>
                 <!-- Buy Button -->
                 <!-- <button type="button" class="btn-buy">Buy Now</button> -->
-                 <div class="btn-buy" id="wallet_container"></div>
+                <a href="api/card.php">Mercado Pago</a>
+                 <!-- <div class="btn-buy" id="wallet_container">Pagar com Mercado Pago</a></div> -->
                 <!-- Cart Close -->
                 <i class='bx bx-x' id="close-cart"></i>
 
@@ -106,6 +107,19 @@
     </section>
     <!-- link to js -->
     <script src="js/main.js"></script>
-    <script src="js/mp.js"></script>
+    <!-- <script src="js/preference.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/preference.php"></script> -->
+    <!-- <script>
+        const mp = new MercadoPago('APP_USR-baa5256f-c506-4623-be17-fca7e2f92ea7', {
+          locale: 'pt-BR'
+        });
+        mp.bricks().create("wallet", "wallet_container", {
+          initialization: {
+              preferenceId: 'pref_1994',
+          },
+        });
+    </script> -->
 </body>
 </html>
