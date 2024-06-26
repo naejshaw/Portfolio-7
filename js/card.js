@@ -1,5 +1,5 @@
 // Arquivo de renderização do card de pagamento do mercado pago
-const mp = new MercadoPago('APP_USR-baa5256f-c506-4623-be17-fca7e2f92ea7');
+const mp = new MercadoPago('APP_USR-baa5256f-c506-4623-be17-fca7e2f92ea7'); // Public Key
 const bricksBuilder = mp.bricks();
 
 
